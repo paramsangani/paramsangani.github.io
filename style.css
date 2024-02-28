@@ -1,10 +1,15 @@
 .centered-content {
     display: flex;
-    flex-direction: column; /* Align items vertically */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Use 100% of the viewport height */
+    height: 100vh; 
     text-align: center; 
+}
+.coming-soon {
+    color: #808080; /* Grey color */
+    font-size: 0.8em; 
+    margin-top: 20px; 
 }
 
 h1 {
@@ -14,8 +19,8 @@ h1 {
 body, html {
     margin: 0;
     padding: 0;
-    width: 100%; /* Ensures the body takes up the full viewport width */
-    height: 100%; /* Helps in some cases to ensure full height */
+    width: 100%; 
+    height: 100%; 
 }
 
 body {
