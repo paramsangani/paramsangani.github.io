@@ -1,0 +1,20 @@
+body {
+    background-color: #333; /* Dark grey background */
+    color: white; /* White text */
+    font-family: Arial, sans-serif; /* Example font */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
