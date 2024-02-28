@@ -1,14 +1,15 @@
 .centered-content {
     display: flex;
+    flex-direction: column; /* Align items vertically */
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Use 100% of the viewport height */
+    text-align: center; 
 }
 
 h1 {
     margin: 0;
 }
-
 
 body {
     background-color: #000000;
