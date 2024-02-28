@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/style.css">
+
 .centered-content {
     display: flex;
     justify-content: center;
@@ -30,3 +32,5 @@ nav ul li a {
     text-decoration: none;
     color: #333;
 }
+
+
