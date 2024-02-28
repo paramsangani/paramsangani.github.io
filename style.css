@@ -11,6 +11,13 @@ h1 {
     margin: 0;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensures the body takes up the full viewport width */
+    height: 100%; /* Helps in some cases to ensure full height */
+}
+
 body {
     background-color: #000000;
     color: white; 
