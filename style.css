@@ -63,3 +63,11 @@ nav ul li a:hover {
 nav ul li a:active {
     color: #FF4500; /* Example: Darker orange color when clicked */
 }
+
+#AboutHeading, #AboutIntro, #AboutBack {
+    margin: 40px 0px 0px 40px;
+}
+
+#AboutIntro {
+    margin-top: 80px;
+}
