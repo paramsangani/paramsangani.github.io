@@ -71,3 +71,11 @@ nav ul li a:active {
 #AboutIntro {
     margin-top: 80px;
 }
+
+#GamesHeading, #GamesIntro, #GamesBack {
+    margin: 40px 0px 0px 40px;
+}
+
+#GamesIntro {
+    margin-top: 80px;
+}
