@@ -2,17 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Games</title>
+    <title>Games - Param Sangani</title>
 </head>
 <body>
-    <div class="container">
-        <h1 id="GamesHeading"> Games</h1>
-        <p id="GamesIntro"> Here are some games you can play to pass some time.</p>
-        <p id="SnakeGame"><a style="color: yellow;" href="./snake/snake.html" target="_blank">Snake game</a></p>
-        <a style="color: yellow;" href="./"><h4 id="GamesBack">MAIN PAGE</h4></a>
-    </div>
+    <header>
+        <div class="top-bar">
+            <a href="./index.html">Home</a>
+            <h1>Games</h1>
+        </div>
+    </header>
+    <main class="game-list">
+        <div class="game">
+            <img src="./images/snakeGame.png" alt="Snake" class="Snakeimage">
+            <h2>Snake Game</h2>
+            <p> Original snake game</p>
+            <a href="#" class="button">Play Now</a>
+        </div>
+        
+        <div class="game">
+            <img src="./images/2048.png" alt="2048" class="2048">
+            <h2>2048</h2>
+            <p>In production...</p>
+        </div>
+
+    </main>
+    <footer>
+        <p>© 2024 Copyright: Param Sangani</p>
+    </footer>
 </body>
 </html>
