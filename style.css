@@ -167,3 +167,47 @@ footer p {
 #GamesIntro {
     margin-top: 80px;
 }
+
+/* ************************** */
+/* ************************** */
+/* ************************** */
+/* project formatting         */
+/* ************************** */
+/* ************************** */
+/* ************************** */
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+#AboutHeading {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#AboutIntro {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.project-link {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: blue;
+}
+
+.project-link h4 {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.project-link h4:hover {
+    border-color: purple;
+}
