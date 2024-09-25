@@ -9,37 +9,124 @@
 
 
 <body>
-    <h1><center>Welcome to my analysis of F1</center></h1>
-
+    <h1><center>Welcome to my F1 analysis!</center></h1>
+    <blockquote>
+        <em>"I’ve always believed that you should never, ever give up and you should always keep fighting even when there’s only a slightest chance."</em>
+        — <i><b>Michael Schumacher (Former F1 Driver)</b></i>
+    </blockquote>
     <h2>Who am I?</h2>
-    <img src="../../images/PersonalPhotoPortfolio.png" alt="Param Sangani" width = "120">
-    <p>You can call me Param Sangani or PJ for short </p>
-
-    <h2>What is this?</h2>
+    <img src="../../images/PersonalPhotoPortfolio.png" alt="Param Sangani" width = "120" float="left">
+    <p>You can call me Param Sangani! <br>Or PJ for short :) <br> My favorite F1 team is McLaren!! and favorite driver is LANDO!! </p>
+    <hr>
+    <h3>What is this?</h3>
     <p>Hopefully to give you the best analysis of my favorite sport: Formula 1</p>
     <ul>
         <li><a href="https://en.wikipedia.org/wiki/Formula_One">Hey what's F1??</a></li>
         <li><a href="https://www.formula1.com/en/results/2024/drivers">Current F1 standings</a></li>
         <li><a href="https://www.herworld.com/life/entertainment/things-to-know-formula-one#:~:text=F1%20pit%20crews%20can%20change%20tyres%20in%20about%20three%20seconds&text=Pit%20stops%20play%20a%20major,were%20changed%20in%201.80%20seconds.">My favorite fact about F1</a></li>
     </ul>
+    <hr>
+    <!-- list to select favorite f1 team-->
     <h3>What is your favorite F1 team?</h3>
-    <select>
-        <option>McLaren</option>
-        <option>Red Bull Racing</option>
-        <option>Ferrari</option>
-        <option>Mercedes</option>
-        <option>Aston Martin</option>
-        <option>RB</option>
-        <option>Haas</option>
-        <option>Williams</option>
-        <option>Alpine</option>
-        <option>Kick Sauber</option>
+    <form id="teamForm">
+        <select id="teamSelect">
+            <option value="">Select a team</option>
+            <option value="mclaren">McLaren</option>
+            <option value="redbull">Red Bull Racing</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="astonmartin">Aston Martin</option>
+            <option value="rb">RB</option>
+            <option value="haas">Haas</option>
+            <option value="williams">Williams</option>
+            <option value="alpine">Alpine</option>
+            <option value="sauber">Kick Sauber</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
 
-    </select>
+    <div id="output" style="margin-top: 20px;"></div>
+
+    <script>
+        // Event listener for form submission
+        document.getElementById('teamForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission (page reload)
+            
+            // Get selected team
+            const team = document.getElementById('teamSelect').value;
+            
+            // Clear the output area
+            const outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = '';
+
+            // Facts and images for each team
+            const teamInfo = {
+                mclaren: {
+                    fact: "Lando Norris (McLaren's F1 drier) may become world chamption in 2024!!!!",
+                    image: "./ImagesF1/McLarenCar.png"
+                },
+                redbull: {
+                    fact: "In 2024 Max Verstappen is carrying the entire team on his back!!",
+                    image: "./ImagesF1/redbull.png"
+                },
+                ferrari: {
+                    fact: "Ferrari are very hit or miss this season but got the all wins that count! Monoco and Monza",
+                    image: "./ImagesF1/ferrari.png"
+                },
+                mercedes: {
+                    fact: "Mercedes might actually be washed but Lewis Hamilton (the GOAT) is leaving the team in 2024 for Ferrari!",
+                    image: "./ImagesF1/mercedes.png"
+                },
+                astonmartin: {
+                    fact: "Aston Martin just signed the greatest F1 engineer in history: Adrian Newey for 30 million pounds",
+                    image: "./ImagesF1/astonmartin.png"
+                },
+                rb: {
+                    fact: "RB's current drivers are Daniel Riccardo and Yuki Tsunoda. But Riccardo might be leavin soon :(",
+                    image: "./ImagesF1/rbcar.png"
+                },
+                haas: {
+                    fact: "Haas is the only American-owned team in Formula 1. Let's see how long they last!",
+                    image: "./ImagesF1/haas.png"
+                },
+                williams: {
+                    fact: "Williams has a rich history with 9 constructors' championships. But now they are struggling.",
+                    image: "./ImagesF1/williams.png"
+                },
+                alpine: {
+                    fact: "Alpine was rebranded from Renault, a former championship-winning team, but now not so much.",
+                    image: "./ImagesF1/alpine.png"
+                },
+                sauber: {
+                    fact: "Kick Sauber is just happy to be included in the top ten teams!",
+                    image: "./ImagesF1/kicksauber.png"
+                }
+            };
+
+            // Check if the selected team has a fact and image
+            if (team && teamInfo[team]) {
+                const { fact, image } = teamInfo[team];
+
+                // Display fact and image
+                outputDiv.innerHTML = `
+                    <h3>Team "Fact":</h3>
+                    <h5><p>${fact}</p></h5>
+                    <img src="${image}" alt="${team}" style="width:300px; height:auto;">
+                `;
+            } else {
+                // If no team selected or no information, display a default message
+                outputDiv.innerHTML = "<p>Please select a valid team!</p>";
+            }
+        });
+    </script>
+
+
+    <hr>
+     <!-- table for hobbies-->
     <h4 style="text-align: center;"> Here are some of my other hobbies </h4>
     <table style="margin: 0 auto; text-align: center; border-collapse: collapse;">
         <tr>
-            <th colspan="3">PJ's Hobbies:</th>
+            <th colspan="3"><u>PJ's Hobbies:</u></th>
         </tr>
         <tr>
             <th>Rank:</th>
