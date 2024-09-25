@@ -48,14 +48,12 @@
     <div id="output" style="margin-top: 20px;"></div>
 
     <script>
-        // Event listener for form submission
         document.getElementById('teamForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission (page reload)
+            event.preventDefault();
             
             // Get selected team
             const team = document.getElementById('teamSelect').value;
             
-            // Clear the output area
             const outputDiv = document.getElementById('output');
             outputDiv.innerHTML = '';
 
@@ -114,7 +112,7 @@
                     <img src="${image}" alt="${team}" style="width:300px; height:auto;">
                 `;
             } else {
-                // If no team selected or no information, display a default message
+                // If no team selected or no information
                 outputDiv.innerHTML = "<p>Please select a valid team!</p>";
             }
         });
