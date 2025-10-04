@@ -2,42 +2,237 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <title>Param Sangani | Computational Design & Intelligent Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>My Personal Website</title>
 </head>
 <body>
-    <header>
-        <div class="top-bar">
-            <h1>Param Sangani</h1>
-            <nav class="nav-links">
-                <a class="button" href="./projects.html">Projects</a>
-                <a class="button" href="./games.html">Games</a>
-                <a class="button" href="./about.html">About Me</a>
-                <a class="button" href="./files/Param_Sangani_CV.pdf" target="_blank">CV</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="profile-section">
-            <img src="./images/PersonalPhotoPortfolio.png" alt="Param Sangani">
-            <div class="bio">
-                <h3>PhD Student</h3>
-                <h3>Saint Louis University</h3>
-                <h3>Computer Science</h3>
+    <header class="site-header">
+        <div class="branding">
+            <div class="nameplate">
+                <h1>Param Sangani</h1>
+                <p>PhD Student · Computer Science · Saint Louis University</p>
             </div>
         </div>
-        <p class="coming-soon">More coming soon...</p>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a class="button" href="projects.html">Projects</a></li>
+                <!-- <li><a class="button" href="games.html">Games</a></li> -->
+                <li><a class="button" href="about.html">About</a></li>
+                <li><a class="button" href="files/Param_Sangani_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Robotics · Multimodal Perception · Computing Education</p>
+                <h2>Engineering intelligent systems and learning experiences that move ideas into the world.</h2>
+                <p class="lead">I prototype new sensing modalities, design resilient autonomy pipelines, and craft teaching artifacts that make complex concepts approachable. My research blends machine learning, human-centered design, and robotics to create impact from the lab to the classroom.</p>
+                <div class="cta-group">
+                    <a class="button primary" href="mailto:param.sangani@slu.edu">Let&apos;s collaborate</a>
+                    <a class="button secondary" href="projects.html">View featured work</a>
+                </div>
+            </div>
+            <div class="hero-side">
+                <img src="images/PersonalPhotoPortfolio.png" alt="Portrait of Param Sangani" class="profile-photo">
+                <ul class="hero-highlights">
+                    <li>
+                        <h3>Graduate Research Assistant</h3>
+                        <p>Building event-based perception systems, robotic actuation platforms, and secure multimodal ML pipelines at the <strong>AIRLab</strong>.</p>
+                    </li>
+                    <li>
+                        <h3>Educator &amp; Mentor</h3>
+                        <p>Designing recitations, visualization demos, and autograders that empower 170+ graduate students in algorithms and software engineering.</p>
+                    </li>
+                    <li>
+                        <h3>Systems Prototyper</h3>
+                        <p>Rapidly integrating hardware, simulation, and control software to validate concepts for emergency response and biomedical applications.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <p class="eyebrow">Research Focus</p>
+                <h2 class="section-title">Areas where I spend most of my time</h2>
+            </div>
+            <div class="card-grid three">
+                <article class="card">
+                    <h3>Research &amp; Experimentation</h3>
+                    <p>Designing sensing systems and autonomy stacks for robotics, with a focus on multimodal perception and secure learning.</p>
+                    <ul>
+                        <li>Event camera + polarization pipelines</li>
+                        <li>Magnetic actuation for biomedical tasks</li>
+                        <li>Adversarial robustness in multimodal ML</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Teaching &amp; Mentorship</h3>
+                    <p>Supporting large-scale graduate courses with hands-on instruction, collaborative problem solving, and equitable evaluation.</p>
+                    <ul>
+                        <li>Algorithms &amp; data structures pedagogy</li>
+                        <li>Software engineering best practices</li>
+                        <li>Visualization demos and autograding</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Systems Prototyping</h3>
+                    <p>Translating concepts into tested hardware and software platforms across robotics, simulation, and health tech.</p>
+                    <ul>
+                        <li>PX4, Unity, and AirSim simulations</li>
+                        <li>Hardware-in-the-loop validation</li>
+                        <li>Cross-disciplinary collaboration</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section alt">
+            <div class="section-header">
+                <p class="eyebrow">Featured Projects</p>
+                <h2 class="section-title">Translating ideas into tangible impact</h2>
+            </div>
+            <div class="card-grid two">
+                <article class="project-card">
+                    <h3>3D Reconstruction with Event Cameras &amp; Polarization</h3>
+                    <p>Developed synchronized sensing using event cameras, rotating polarizers, and robotic manipulators for surface-dependent reconstruction.</p>
+                    <div class="tag-group">
+                        <span class="tag">ROS</span>
+                        <span class="tag">Robotics</span>
+                        <span class="tag">Optics</span>
+                    </div>
+                    <a class="button tertiary" href="projects.html">Read more</a>
+                </article>
+                <article class="project-card">
+                    <h3>Drone Simulation for Emergency Response</h3>
+                    <p>Built PX4, AirSim, and Unity pipelines to evaluate UAV-human collaboration in high-stress disaster scenarios.</p>
+                    <div class="tag-group">
+                        <span class="tag">PX4</span>
+                        <span class="tag">Simulation</span>
+                        <span class="tag">Computer Vision</span>
+                    </div>
+                    <a class="button tertiary" href="projects.html">See simulation workflow</a>
+                </article>
+                <article class="project-card">
+                    <h3>Magnetic Actuation for Contactless Manipulation</h3>
+                    <p>Designed magnetic control systems that enable untethered object manipulation for minimally invasive biomedical procedures.</p>
+                    <div class="tag-group">
+                        <span class="tag">Magnetics</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">Biomedical</span>
+                    </div>
+                    <a class="button tertiary" href="projects.html">Explore research notes</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <p class="eyebrow">Experience</p>
+                <h2 class="section-title">Learning by building, teaching, and sharing</h2>
+            </div>
+            <div class="timeline">
+                <article class="timeline-item">
+                    <h3>Graduate Research Assistant &mdash; AIRLab</h3>
+                    <p class="timeline-meta">Saint Louis University &middot; St. Louis, MO &middot; Aug 2023 &ndash; Present</p>
+                    <ul>
+                        <li>Developed event camera + polarization lens systems for 3D reconstruction and integrated ROS-driven robotic arm control.</li>
+                        <li>Created hardware-in-the-loop drone simulations using PX4, Unity, and AirSim.</li>
+                        <li>Researched property inference attacks against multimodal data and designed magnetic actuation platforms for biomedical use.</li>
+                    </ul>
+                </article>
+                <article class="timeline-item">
+                    <h3>Graduate Teaching Assistant &mdash; Algorithms (CSCI 5100)</h3>
+                    <p class="timeline-meta">Saint Louis University &middot; Aug 2024 &ndash; May 2025</p>
+                    <ul>
+                        <li>Supported a 100+ student graduate course with assignment design, grading, and exam development covering core algorithm topics.</li>
+                        <li>Led weekly recitations and workshops on asymptotic analysis, graph theory, and optimization.</li>
+                        <li>Authored Python visualizations and autograding scripts to illustrate time-complexity tradeoffs and streamline submissions.</li>
+                    </ul>
+                </article>
+                <article class="timeline-item">
+                    <h3>Graduate Teaching Assistant &mdash; Principles of Software Development (CS 5030)</h3>
+                    <p class="timeline-meta">Saint Louis University &middot; Jan 2024 &ndash; May 2024</p>
+                    <ul>
+                        <li>Delivered weekly demonstrations and lectures for a 70+ student course focused on software engineering best practices.</li>
+                        <li>Mentored project teams on debugging, collaborative workflows, and code reviews.</li>
+                        <li>Implemented grading infrastructure that reinforced clean architecture and testing strategies.</li>
+                    </ul>
+                </article>
+                <article class="timeline-item">
+                    <h3>MedLaunch &mdash; Team Lead</h3>
+                    <p class="timeline-meta">St. Louis, MO &middot; Aug 2020 &ndash; June 2022</p>
+                    <ul>
+                        <li>Led development of tools addressing staffing shortages and nurse burnout in oncology infusion centers, earning a first-place award.</li>
+                        <li>Designed a prototype medical device to accurately measure cervical dilation during pregnancy.</li>
+                    </ul>
+                </article>
+                <article class="timeline-item">
+                    <h3>Space Systems Research Lab &mdash; Ground Ops &amp; Communication</h3>
+                    <p class="timeline-meta">Jan 2019 &ndash; May 2021</p>
+                    <ul>
+                        <li>Integrated a satellite deployed from the ISS to measure radiation across atmospheric layers.</li>
+                        <li>Collaborated on embedded systems design and telemetry communication protocols.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section alt">
+            <div class="section-header">
+                <p class="eyebrow">Publications &amp; Talks</p>
+                <h2 class="section-title">Sharing what I learn</h2>
+            </div>
+            <div class="card-grid two">
+                <article class="card">
+                    <h3>Event-Based Perception for Robotics (2024)</h3>
+                    <p>Presented lab research on multimodal sensing pipelines and 3D reconstruction techniques for adaptive robotic manipulation.</p>
+                </article>
+                <article class="card">
+                    <h3>Teaching Algorithms Through Visualization (2025)</h3>
+                    <p>Led workshops highlighting Python-based demos that connect theory, complexity analysis, and correctness proofs.</p>
+                </article>
+            </div>
+            <p class="note">Full list available upon request &mdash; I&apos;m always happy to talk about future collaborations or speaking opportunities.</p>
+        </section>
+
+        <section class="section contact">
+            <div class="section-header">
+                <p class="eyebrow">Stay in touch</p>
+                <h2 class="section-title">Let&apos;s build the next experiment together</h2>
+            </div>
+            <div class="contact-grid">
+                <article class="contact-card">
+                    <h3>Collaborative Research</h3>
+                    <p>Exploring robotics, multimodal perception, or computing education? I&apos;d love to collaborate on the next experiment.</p>
+                    <a class="button primary" href="mailto:param.sangani@slu.edu">Email me</a>
+                </article>
+                <article class="contact-card">
+                    <h3>Speaking &amp; Workshops</h3>
+                    <p>Invite me to share stories from the lab, facilitate a hands-on session, or mentor student teams.</p>
+                    <a class="button secondary" href="https://www.linkedin.com/in/param-sangani" target="_blank" rel="noopener">Connect on LinkedIn</a>
+                </article>
+                <article class="contact-card">
+                    <h3>Follow the Journey</h3>
+                    <p>I share progress updates, behind-the-scenes builds, and reflections on intentional innovation.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/paramsangani" target="_blank" rel="noopener"><img src="images/GithubLogo.png" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/param-sangani" target="_blank" rel="noopener"><img src="images/LinkedInLogo.png" alt="LinkedIn"></a>
+                        <a href="https://www.instagram.com/param_sangani/" target="_blank" rel="noopener"><img src="images/InstagramIcon.png" alt="Instagram"></a>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
-    <footer>
-        <div class="social-links">
-            <a href="https://github.com/paramsangani" target="_blank"><img src="./images/GithubLogo.png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/param-sangani" target="_blank"><img src="./images/LinkedInLogo.png" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/param_sangani/" target="_blank"><img src="./images/InstagramIcon.png" alt="Instagram"></a>
-        </div>
-        <p>© 2024 Copyright: Param Sangani</p>
+
+    <footer class="site-footer">
+        <p>© 2024 Param Sangani. Crafted with curiosity and care.</p>
     </footer>
 </body>
 </html>
